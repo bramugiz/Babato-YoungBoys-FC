@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Players — Your Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- reuse header from index for consistency -->
+    <header class="site-header">
+        <div class="nav-row main-nav-row">
+            <div class="container nav-container">
+                <div class="crest">
+                    <a href="index.html"><img src="logo.png" alt="Club crest"></a>
+                </div>
+                <nav id="nav" class="nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="players.html" class="nav-link active">Players</a>
+                    <a href="staff.html" class="nav-link">Staff</a>
+                    <a href="#" class="nav-link">Matches</a>
+                    <a href="#contact" class="nav-link">Contact Us</a>
+                </nav>
+                <div class="nav-right">
+                    <button class="search-btn" aria-label="Search"><i class="fas fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2>Players</h2>
+                <p>Browse squads by age group.</p>
+
+                <!-- U10 Team -->
+                <div class="team-category">
+                    <h3 class="team-name" id="u10">U10</h3>
+                    <div class="grid players-grid">
+                        <!-- 15 players (3 columns x 5 rows) -->
+                        <div class="player-card">
+                            <div class="player-image"><img src="nelson.jpg" alt="Bahamepe Nelson"></div>
+                            <div class="player-info">
+                                <h4>Bahamepe Nelson</h4>
+                                <p>Goalkeeper • #1</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="isaac.jpg" alt="Topia Isaac"></div>
+                            <div class="player-info">
+                                <h4>Topia Isaac</h4>
+                                <p>Defender • #2</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="ssadat.jpg" alt="Sumaila Sadat"></div>
+                            <div class="player-info">
+                                <h4>Sumaila Sadat</h4>
+                                <p>Defender • #3</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Baniwiria Mubarik"></div>
+                            <div class="player-info">
+                                <h4>Baniwiria Mubarik</h4>
+                                <p>Defender • #1</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Abubakari Sherif"></div>
+                            <div class="player-info">
+                                <h4>Abubakari Sherif</h4>
+                                <p>Midfielder • #11</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="godwin.jpg" alt="Kingsley K. Godwin"></div>
+                            <div class="player-info">
+                                <h4>Kingsley Godwin</h4>
+                                <p>Midfielder • #6</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Somakro Abraham"></div>
+                            <div class="player-info">
+                                <h4>Somakro Abraham</h4>
+                                <p>Forward • #10</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="basit.jpg" alt="Issah Abdul Basit"></div>
+                            <div class="player-info">
+                                <h4>Issah Abdul Basit</h4>
+                                <p>Forward • #3</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="tawfik.jpg" alt="Issah Abdul Tawfik"></div>
+                            <div class="player-info">
+                                <h4>Issah Abdul Tawfik</h4>
+                                <p>Midfielder • #7</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="sadat.jpg" alt="Musah Sadat"></div>
+                            <div class="player-info">
+                                <h4>Musah Sadat</h4>
+                                <p>Fullback • #2</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Aziz Ishaw"></div>
+                            <div class="player-info">
+                                <h4>Aziz Ishaw</h4>
+                                <p>Midfielder• #14</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Hassan Haq"></div>
+                            <div class="player-info">
+                                <h4>Hassan Haq</h4>
+                                <p>Forward • #12</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Abdul Mugeez"></div>
+                            <div class="player-info">
+                                <h4>Abdul Mugeez</h4>
+                                <p>Central Mid • #5</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- U13 Team -->
+                <div class="team-category">
+                    <h3 class="team-name" id="u13">U13</h3>
+                    <div class="grid players-grid">
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Banaah Napare Thomas"></div>
+                            <div class="player-info">
+                                <h4>Banaah Napare Thomas</h4>
+                                <p>Goalkeeper • #9</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Adams Samiru"></div>
+                            <div class="player-info">
+                                <h4>Adams Samiru</h4>
+                                <p>Defender• #8</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="kojo.jpg" alt="Nyamaah Kojo"></div>
+                            <div class="player-info">
+                                <h4>Nyamaah Kojo</h4>
+                                <p>Defender • #4</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Yussif Zidane"></div>
+                            <div class="player-info">
+                                <h4>Yussif Zidane</h4>
+                                <p>Defender• #1</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Ibrahim Awal"></div>
+                            <div class="player-info">
+                                <h4>Ibrahim Awal</h4>
+                                <p>Defender• #11</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Abubakari Mohammed"></div>
+                            <div class="player-info">
+                                <h4>Abubakari Mohammed</h4>
+                                <p>Midfielder • #6</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="jude.jpg" alt="Ishaw Ibrahim"></div>
+                            <div class="player-info">
+                                <h4>Ishaw Ibrahim</h4>
+                                <p>Winger• #10</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Eliasu Mubarick"></div>
+                            <div class="player-info">
+                                <h4>Eliasu Mubarick</h4>
+                                <p>Forward • #3</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Yussif Waliu"></div>
+                            <div class="player-info">
+                                <h4>Yussif Waliu</h4>
+                                <p>Winger • #7</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Yajagee Essien"></div>
+                            <div class="player-info">
+                                <h4>Yajagee Essien</h4>
+                                <p>Winger • #2</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Isaac Twumasi"></div>
+                            <div class="player-info">
+                                <h4>Isaac Twumasi </h4>
+                                <p>Striker • #14</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Shaibu Twumasi"></div>
+                            <div class="player-info">
+                                <h4>Shaibu Ibrahim</h4>
+                                <p>Midfielder • #12</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Issah Godwin"></div>
+                            <div class="player-info">
+                                <h4>Issah Godwin </h4>
+                                <p>Central Mid • #5</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- U15 Team -->
+                <div class="team-category">
+                    <h3 class="team-name" id="u15">U15</h3>
+                    <div class="grid players-grid">
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Banaah Napare Thomas"></div>
+                            <div class="player-info">
+                                <h4>Banaaah Napare Thomas</h4>
+                                <p>Goalkeeper • #9</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="balakoma.jpg" alt="Naa Balakoma"></div>
+                            <div class="player-info">
+                                <h4>Naa Balakoma</h4>
+                                <p>Defender• #8</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Yajagee Ernest Tipampi"></div>
+                            <div class="player-info">
+                                <h4>Yajagee Ernest Tipampi</h4>
+                                <p>Defender • #4</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Sunkwa Benedict"></div>
+                            <div class="player-info">
+                                <h4>Sunkwa Benedict</h4>
+                                <p>Defender • #1</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Peter Bernard"></div>
+                            <div class="player-info">
+                                <h4>Peter Benard</h4>
+                                <p>Defender • #11</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="baihaky.jpg" alt="Iddrisu Bahaiki"></div>
+                            <div class="player-info">
+                                <h4>Iddrisu Baihaki</h4>
+                                <p>Midfielder • #6</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Opoku Mesharck"></div>
+                            <div class="player-info">
+                                <h4>Opoku Mesharck</h4>
+                                <p>Midfielder • #10</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Mensah Dominic"></div>
+                            <div class="player-info">
+                                <h4>Mensah Dominic</h4>
+                                <p>Midfielder • #3</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Lamaah Kwayaja"></div>
+                            <div class="player-info">
+                                <h4>Lamaah Kwayaja</h4>
+                                <p>Forward • #7</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Atta Prince"></div>
+                            <div class="player-info">
+                                <h4>Atta Prince</h4>
+                                <p>Fullback • #2</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="olmo.jpg" alt="Michael S. Addae"></div>
+                            <div class="player-info">
+                                <h4>Dramani Razarck</h4>
+                                <p>Midfielder • #14</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Kwabena Evans"></div>
+                            <div class="player-info">
+                                <h4>Kwabena Evans</h4>
+                                <p>Forward • #12</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Yussif Muritadah"></div>
+                            <div class="player-info">
+                                <h4>Yussif Muritadah</h4>
+                                <p>Central Mid • #5</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Girls Team -->
+                <div class="team-category">
+                    <h3 class="team-name" id="girls">Girls Team</h3>
+                    <div class="grid players-grid">
+                        <div class="player-card">
+                            <div class="player-image"><img src="gifty.jpg" alt="Baamoni Gifty"></div>
+                            <div class="player-info">
+                                <h4>Baamoni Gifty</h4>
+                                <p>Goalkeeper • #9</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="esther.jpg" alt="Nyamah Esther"></div>
+                            <div class="player-info">
+                                <h4>Nyamah Esther</h4>
+                                <p>Midfielder • #8</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="fati.jpg" alt="Ibrahim Fati"></div>
+                            <div class="player-info">
+                                <h4>Ibrahim Fati</h4>
+                                <p>Defender • #4</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="lariya.jpg" alt="Musah Lariya"></div>
+                            <div class="player-info">
+                                <h4>Musah Lariya</h4>
+                                <p>Forward • #1</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="barikisu.jpg" alt="Felicity M. Kusi"></div>
+                            <div class="player-info">
+                                <h4>Mahama Barikisu </h4>
+                                <p>Midfielder • #11</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="elizabeth.jpg" alt="Yaa P. Asante"></div>
+                            <div class="player-info">
+                                <h4>Sulo Elizabeth</h4>
+                                <p>Midfielder • #6</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="fahima.jpg" alt="Osman Fahima"></div>
+                            <div class="player-info">
+                                <h4>Osman Fahima</h4>
+                                <p>Forward • #10</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="abiba.jpg" alt="Issah Abiba"></div>
+                            <div class="player-info">
+                                <h4>Issah Abiba</h4>
+                                <p>Defender • #3</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="hikima.jpg" alt="Ibrahim Hikima"></div>
+                            <div class="player-info">
+                                <h4>Ibrahim Hikima</h4>
+                                <p>Midfielder • #7</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="barila.jpg" alt="Yussif Barila"></div>
+                            <div class="player-info">
+                                <h4>Yussif Barila</h4>
+                                <p>Winger • #2</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="amina.jpg" alt="Sulemana Amina"></div>
+                            <div class="player-info">
+                                <h4>Sulemana Amina</h4>
+                                <p>Striker • #14</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Musah Sherifa"></div>
+                            <div class="player-info">
+                                <h4>Mohammed Sharifa</h4>
+                                <p>Midfielder • 6</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image"><img src="logo.png" alt="Issahaku Abiba"></div>
+                            <div class="player-info">
+                                <h4>Issahaku Abiba</h4>
+                                <p>Central Mid • #5</p><a class="player-cta" href="#">View Player</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col about">
+                    <h4>About Us</h4>
+                    <p>AsanSka FC is a Division Two football club based in Accra, Ghana. The club is located at Oyibi, off the Adenta–Dodowa Road, and is officially registered under the Ghana Football Association.</p>
+                    <img src="logo.png" alt="crest" class="footer-crest">
+                </div>
+
+                <div class="footer-col footer-links">
+                    <h4>About Club</h4>
+                    <ul>
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col footer-links">
+                    <h4>Teams Info</h4>
+                    <ul>
+                        <li><a href="staff.html">Staff</a></li>
+                        <li><a href="players.html">Players</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col contact">
+                    <h4>Contact</h4>
+                    <p><strong>Location:</strong> Oyibi Adjacent to AsanSka University College of Design and Technology</p>
+                    <p><strong>Tel:</strong> +233 25 685 5484</p>
+                    <p><strong>Email:</strong> info@asanskafc.com</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>© <span id="year"></span> AsanSka Football Club</div>
+                <div class="footer-links-inline">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="#">Find us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Transform player card p to proper structure
+        document.querySelectorAll('.player-info').forEach(info => {
+            const p = info.querySelector('p');
+            if (p) {
+                const text = p.textContent;
+                const [position, number] = text.split(' • ');
+
+                // Remove old p
+                p.remove();
+
+                // Create new structure
+                const posP = document.createElement('p');
+                posP.className = 'player-position';
+                posP.textContent = position;
+
+                const cta = info.querySelector('.player-cta');
+                info.appendChild(posP);
+
+                if (!cta) {
+                    const ctaLink = document.createElement('a');
+                    ctaLink.href = '#';
+                    ctaLink.className = 'player-cta';
+                    ctaLink.textContent = 'View Player';
+                    info.appendChild(ctaLink);
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
