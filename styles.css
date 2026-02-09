@@ -67,6 +67,9 @@ body {
     background: transparent;
     border: 0;
     font-size: 1.4rem;
+    color: var(--gold);
+    cursor: pointer;
+    padding: 8px;
 }
 
 .search-btn {
@@ -1026,6 +1029,9 @@ body {
     }
     .nav-toggle {
         display: inline-block
+    }
+    .hero {
+        padding: 120px 0;
     }
     .hero-title {
         font-size: 1.8rem
