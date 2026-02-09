@@ -414,6 +414,18 @@ body {
     margin-bottom: 24px;
 }
 
+@media (max-width: 920px) {
+    .staff-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .staff-grid-4 {
+        grid-template-columns: 1fr;
+    }
+}
+
 .team-category {
     margin-bottom: 48px
 }
@@ -1043,6 +1055,18 @@ body {
     .services-grid {
         grid-template-columns: 1fr;
         gap: 24px;
+    }
+    .services-grid {
+        flex-direction: column;
+    }
+    .services-content {
+        order: 1;
+    }
+    .services-image {
+        order: 2;
+    }
+    .news-section .news-slider {
+        grid-template-columns: 1fr;
     }
     .players-grid {
         grid-template-columns: repeat(3, 1fr)
