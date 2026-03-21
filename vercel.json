@@ -3,7 +3,7 @@
     "buildCommand": "echo 'Static site'",
     "installCommand": "echo 'No dependencies to install'",
     "framework": null,
-    "public": ".",
+    "public": true,
     "cleanUrls": true,
     "headers": [{
             "source": "/(.*)",
