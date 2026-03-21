@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Babato YoungBoys FC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .gallery-page-hero {
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #1e40af 0%, #0f172a 100%);
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+        }
+        
+        .gallery-page-hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 0;
+            margin-bottom: 0.5rem;
+            font-family: 'Oswald', sans-serif;
+        }
+        
+        .gallery-page-hero p {
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            margin: 0;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem 4rem;
+        }
+        
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+            .gallery-page-hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="BYB Logo" class="logo-img">
+                <span class="club-name">BABATO YOUNGBOYS FC</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#teams" class="nav-link">Teams</a></li>
+                <li><a href="index.html#fixtures" class="nav-link">Fixtures</a></li>
+                <li><a href="index.html#news" class="nav-link">News</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="index.html#videos" class="nav-link">Videos</a></li>
+                <li><a href="staff.html" class="nav-link">Staff</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Gallery Hero -->
+    <div class="gallery-page-hero">
+        <h1>Photo Gallery</h1>
+        <p>Explore memorable moments from our club's journey</p>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid">
+        <!-- Gallery Item 1 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('UN FFTG BOYS.jpg')">
+            <img src="UN FFTG BOYS.jpg" alt="Team Match" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 2 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('UN FFTG BOYS 2.jpg')">
+            <img src="UN FFTG BOYS 2.jpg" alt="Team in Action" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 3 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('UN FFTG GIRLS.jpg')">
+            <img src="UN FFTG GIRLS.jpg" alt="Girls Team" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 4 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('IMG-20251016-WA0033.jpg')">
+            <img src="IMG-20251016-WA0033.jpg" alt="Event Photo" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 5 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('IMG-20251016-WA0070.jpg')">
+            <img src="IMG-20251016-WA0070.jpg" alt="Club Activity" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 6 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('FB_IMG_17635581817292266.jpg')">
+            <img src="FB_IMG_17635581817292266.jpg" alt="Team Celebration" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 7 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('abiba.jpg')">
+            <img src="abiba.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 8 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('Abraham.jpg')">
+            <img src="Abraham.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 9 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('akwasi.jpg')">
+            <img src="akwasi.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 10 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('amina.jpg')">
+            <img src="amina.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 11 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('baihaky.jpg')">
+            <img src="baihaky.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 12 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('balakoma.jpg')">
+            <img src="balakoma.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 13 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('barikisu.jpg')">
+            <img src="barikisu.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 14 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('barila.jpg')">
+            <img src="barila.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 15 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('basit.jpg')">
+            <img src="basit.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 16 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('elizabeth.jpg')">
+            <img src="elizabeth.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 17 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('esther.jpg')">
+            <img src="esther.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 18 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('fahima.jpg')">
+            <img src="fahima.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 19 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('fati.jpg')">
+            <img src="fati.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 20 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('gifty.jpg')">
+            <img src="gifty.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 21 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('godwin.jpg')">
+            <img src="godwin.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 22 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('hakim.jpg')">
+            <img src="hakim.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 23 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('hassan.jpg')">
+            <img src="hassan.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 24 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('hikima.jpg')">
+            <img src="hikima.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 25 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('isaac.jpg')">
+            <img src="isaac.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 26 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('jude.jpg')">
+            <img src="jude.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 27 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('kojo.jpg')">
+            <img src="kojo.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 28 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('landscape.jpg')">
+            <img src="landscape.jpg" alt="Landscape" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 29 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('lariya.jpg')">
+            <img src="lariya.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 30 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('lateef.jpg')">
+            <img src="lateef.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 31 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('mugiz.jpg')">
+            <img src="mugiz.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 32 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('mukaila.jpg')">
+            <img src="mukaila.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 33 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('nelson.jpg')">
+            <img src="nelson.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 34 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('neymar.jpg')">
+            <img src="neymar.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 35 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('olmo.jpg')">
+            <img src="olmo.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 36 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('osman.jpg')">
+            <img src="osman.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 37 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('priscilla.jpg')">
+            <img src="priscilla.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 38 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('sadat.jpg')">
+            <img src="sadat.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 39 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('sherif.jpg')">
+            <img src="sherif.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 40 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('ssadat.jpg')">
+            <img src="ssadat.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Gallery Item 41 -->
+        <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" onclick="openGalleryModal('tawfik.jpg')">
+            <img src="tawfik.jpg" alt="Player" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Modal -->
+    <div id="galleryModal" style="display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.95); align-items: center; justify-content: center;">
+        <button style="position: absolute; top: 30px; right: 40px; font-size: 3rem; color: #f59e0b; cursor: pointer; background: none; border: none; transition: all 0.3s ease;" onclick="closeGalleryModal()">&times;</button>
+        <img id="galleryModalImage" src="" alt="Gallery Image" style="max-width: 90%; max-height: 85%; border-radius: 12px; object-fit: contain; box-shadow: 0 0 50px rgba(245, 158, 11, 0.5);">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Babato YoungBoys FC is dedicated to developing young football talent and building champions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Affiliations</h4>
+                    <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+                        <img src="250px-Ghana_Football_Association_logo.webp" alt="GFA" style="height: 50px; filter: brightness(0.9);">
+                        <img src="united-nations-logo-design-1024x559.webp" alt="UN" style="height: 50px; filter: brightness(0.9);">
+                        <img src="FFTG.webp" alt="FFTG" style="height: 50px; filter: brightness(0.9);">
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.tiktok.com/@babatoyoungboys_fc" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Babato YoungBoys FC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openGalleryModal(imageSrc) {
+            document.getElementById('galleryModal').style.display = 'flex';
+            document.getElementById('galleryModalImage').src = imageSrc;
+        }
+
+        function closeGalleryModal() {
+            document.getElementById('galleryModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside the image
+        window.addEventListener('click', function(event) {
+            const modal = document.getElementById('galleryModal');
+            if (event.target === modal) {
+                closeGalleryModal();
+            }
+        });
+
+        // Close modal with Escape key
+        window.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeGalleryModal();
+            }
+        });
+
+        // Navigation hamburger
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        hamburger.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

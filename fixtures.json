@@ -1,0 +1,12 @@
+[
+    { "date": "Sat, Mar 7", "opponent": "Riverside Rovers", "venue": "Home", "kickoff": "3:00pm" },
+    { "date": "Sat, Mar 21", "opponent": "Hilltown United", "venue": "Away", "kickoff": "2:30pm" },
+    { "date": "Sun, Apr 5", "opponent": "Valley FC", "venue": "Home", "kickoff": "1:00pm" },
+    { "date": "Sat, Apr 19", "opponent": "Eastside Athletic", "venue": "Away", "kickoff": "4:00pm" },
+    { "date": "Sun, May 3", "opponent": "Central City FC", "venue": "Home", "kickoff": "2:00pm" },
+    { "date": "Sat, May 17", "opponent": "North Ridge United", "venue": "Away", "kickoff": "3:30pm" },
+    { "date": "Sun, Jun 1", "opponent": "Sunset Warriors", "venue": "Home", "kickoff": "5:00pm" },
+    { "date": "Sat, Jun 15", "opponent": "Lakeview FC", "venue": "Away", "kickoff": "4:30pm" },
+    { "date": "Sun, Jun 29", "opponent": "Mountain Rangers", "venue": "Home", "kickoff": "2:30pm" },
+    { "date": "Sat, Jul 13", "opponent": "Desert Eagles", "venue": "Away", "kickoff": "5:00pm" }
+]

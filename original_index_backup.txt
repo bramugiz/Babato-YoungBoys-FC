@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babato YoungBoys FC - Modern Football Club</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="animations.css">
+
+<body>
+    <script src="https://cdn.skypack.dev/gsap@3.12.5/ScrollTrigger"></script>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="BYB Logo" class="logo-img">
+                <span class="club-name">BABATO YOUNGBOYS FC</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#teams" class="nav-link">Teams</a></li>
+                <li><a href="staff.html" class="nav-link">Staff</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero hero-players">
+        <img src="landscape.jpg" alt="Football Field" class="hero-players-video">
+        <div class="featured-players-container">
+            <!-- Featured Player 1 -->
+            <div class="featured-player" data-player="0">
+                <div class="featured-player-card">
+                    <div class="player-flip-container">
+                        <div class="player-flip-inner">
+                            <div class="player-flip-front">
+                                <div class="front-image-container">
+                                    <img src="isaac.jpg" alt="Topia Isaac">
+                                    <div class="player-overlay">Defender</div>
+                                </div>
+                                <div class="front-info">
+                                    <h3 class="front-name">Topia Isaac</h3>
+                                    <p class="front-position-number">Defender • #9 U10</p>
+                                </div>
+                            </div>
+                            <div class="player-flip-back">
+                                <div class="achievement-grid">
+                                    <span class="achievement-badge">Top Defender</span>
+
+                                </div>
+                                <div class="back-stats">
+                                    <div class="stat-badge">
+                                        <strong>88</strong> Defense
+                                    </div>
+                                    <div class="stat-badge">
+                                        <strong>85</strong> Pace
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Featured Player 2 -->
+            <div class="featured-player" data-player="1">
+                <div class="featured-player-card">
+                    <div class="player-flip-container">
+                        <div class="player-flip-inner">
+                            <div class="player-flip-front">
+                                <div class="front-image-container">
+                                    <img src="sadat.jpg" alt="Musah Sadat">
+                                    <div class="player-overlay">Winger</div>
+                                </div>
+                                <div class="front-info">
+                                    <h3 class="front-name">Musah Sadat</h3>
+                                    <p class="front-position-number">Winger • #11 U10</p>
+                                </div>
+                            </div>
+                            <div class="player-flip-back">
+                                <div class="achievement-grid">
+                                    <span class="achievement-badge">Fastest Player</span>
+                                    <span class="achievement-badge">Assist King</span>
+                                </div>
+                                <div class="back-stats">
+                                    <div class="stat-badge">
+                                        <strong>92</strong> Pace
+                                    </div>
+                                    <div class="stat-badge">
+                                        <strong>87</strong> Dribbling
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Teams Preview -->
+                            <section id="teams" class="teams-section">
+                                <div class="container">
+                                    <h2 class="section-title">Our Teams</h2>
+                                </div>
+                                <div class="section-subtitle">Multi-age group squads showcasing young talent</div>
+                        </div>
+                        <div class="team-tabs">
+                            <!-- Player 3 -->
+                            <div class="featured-player" data-player="2">
+                                <div class="featured-player-card">
+                                    <div class="player-flip-container">
+                                        <button class="tab-btn active" data-team="u10">U10</button>
+                                        <button class="tab-btn" data-team="u13">U13</button>
+                                        <div class="front-image-container">
+                                            <img src="lateef.jpg" alt="Ibrahim Ishaw">
+                                            <div class="player-overlay">Winger</div>
+                                        </div>
+                                        <div class="front-info">
+                                            <h3 class="front-name">Ibrahim Ishaw</h3>
+                                            <p class="front-position-number">Winger • #9 U13</p>
+                                            <button class="tab-btn" data-team="u15">U15</button>
+                                        </div>
+                                        <button class="tab-btn" data-team="girls">Girls</button>
+                                        <div class="achievement-grid">
+                                            <span class="achievement-badge">Dribble Master</span>
+                                            <span class="achievement-badge">U13 Star</span>
+                                        </div>
+                                        <div class="back-stats">
+                                            <div class="stat-badge">
+                                                <strong>89</strong> Pace
+                                            </div>
+                                            <div class="stat-badge">
+                                                <strong>88</strong> Dribbling
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <d class="players-container">
+                                    <d id="u10" class="team-content active">
+                                        <h3 class="team-title">U10 Team</h3>
+                            </div>
+                        </div>
+                        <!-- Player 4 -->
+                        <div class="featured-player" data-player="3">
+                            <div class="featured-player-card">
+                                <div class="player-flip-container">
+                                    <div class="player-flip-inner">
+                                        <div class="player-flip-front">
+                                            <d class="players-grid">
+                                                <img src="akwasi.jpg" alt="Nana Agyeman">
+                                                <d class="player-card">
+                                                    <d class="player-image">
+                                                        <img src="isaac.jpg" alt="Topia Isaac">
+                                                        <div class="player-overlay"><span>Defender</span></div>
+                                                        <p class="front-position-number">Forward • #10 U13</p>
+                                        </div>
+                                    </div>
+                                    <div class="player-flip-back">
+                                        <div class="achievement-grid">
+                                            <span class="achievement-badge">Top Scorer</span>
+                                            <span class="achievement-badge">Golden Boot</span>
+                                        </div>
+                                        <div class="back-stats">
+                                            <div class="stat-badge">
+                                                <strong>86</strong> Shooting
+                                            </div>
+                                            <div class="stat-badge">
+                                                <strong>12</strong> Goals
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Player 5 -->
+                    <div class="featured-player" data-player="4">
+                        <div class="featured-player-card">
+                            <div class="player-flip-container">
+                                <div class="player-flip-inner">
+                                    <div class="player-flip-front">
+                                    </div>
+                                    <d class="player-info">
+                                        <h4>Topia Isaac</h4>
+                                        <img src="basit.jpg" alt="Jordan Kyei">
+                                        <div class="player-overlay">Winger</div>
+                                </div>
+                                <p>Defender • #9</p>
+                                <di class="player-stats">
+                                    <p class="front-position-number">Winger • #11 U15</p>
+                            </div>
+                            <span>Pace <strong>85</strong></span>
+                            <span>Defense <strong>88</strong></span>
+                            <div class="achievement-grid">
+                                <span class="achievement-badge">Club Fastest</span>
+                                <span class="achievement-badge">U15 MVP</span>
+                            </div>
+                            <div class="back-stats">
+                                <div class="stat-badge">
+                                    <strong>95</strong> Pace
+                                </div>
+                                <div class="stat-badge">
+                                    <strong>94</strong> Dribbling
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Additional U10 players similar pattern -->
+        <!-- Player 6 -->
+        </div>
+        <div class="featured-player-card">
+        </div>
+        <!-- Other teams follow same pattern -->
+        <div class="player-flip-front">
+        </div>
+        <img src="sadat.jpg" alt="Enoch Bediako">
+        <div class="player-overlay">Forward</div>
+        </div>
+        <div class="front-info">
+            <h3 class="front-name">Enoch Bediako</h3>
+            <di style="text-align: center; margin-top: 3rem;">
+        </div>
+        </div>
+        <a href="players.html" class="btn btn-primary">View Full Players Directory</a>
+        </div>
+        </div>
+        <span class="achievement-badge">Captain</span>
+        </div>
+        <div class="back-stats">
+            <div class="stat-badge">
+                </section>
+                Shooting
+
+                <div class="stat-badge">
+                    <strong>15</strong> Goals
+                </div>
+                <!-- Fixtures -->
+                <setion id="fixtures" class="fixtures-section py-20">
+            </div>
+            <di class="container">
+        </div>
+        <h2 class="section-title">Upcoming Fixtures</h2>
+        </div>
+        <div class="section-subtitle">Follow our competitive schedule</div>
+        <div class="featured-player" data-player="6">
+            <tale class="fixtures-table">
+                <div class="player-flip-container">
+                    <thad>
+                        <div class="player-flip-front">
+                            <tr <th>Date</th>
+                                <img src="elizabeth.jpg" alt="Elizabeth Boateng">
+                                <th>Opponent</th>
+                        </div>
+                        <th>Venue</th>
+                        <h3 class="front-name">Elizabeth Boateng</h3>
+                        <th>Kickoff</th>
+                </div>
+                </tr>
+                <div class="player-flip-back">
+                    <div class="achievement-grid">
+                        </thead>
+                        <span class="achievement-badge">Best Dribbler</span>
+                        <tbdy>
+                            <div class="back-stats">
+                                <div class="stat-badge">
+                                    <tr <td>Sat, Mar 7</td>
+                                        Pace
+                                </div>
+                                <div class="stat-badge">
+                                    <strong>90</strong> Dribbling
+                                    <td>Riverside Rovers</td>
+                                    <td>Home</td>
+                                </div>
+                            </div>
+                            <td>3:00pm</td>
+                    </div>
+                    </tr>
+                </div>
+                <tr>
+                    <div class="featured-player" data-player="7">
+                        <td>Sat, Mar 21</td>
+                        <div class="player-flip-container">
+                            <td>Hilltown United</td>
+                            <div class="player-flip-front">
+                                <td>Away</td>
+                                <img src="amina.jpg" alt="Amina Siddiq">
+                                <td>2:30pm</td>
+                            </div>
+                </tr>
+                <h3 class="front-name">Amina Siddiq</h3>
+                <tr>
+                    </div>
+                    <td>Sun, Apr 5</td>
+                    <div class="player-flip-back">
+                        <td>Valley FC</td>
+                        <span class="achievement-badge">Girls Top Scorer</span>
+                        <td>Home</td>
+                    </div>
+                    <td>1:00pm</td>
+                    <div class="stat-badge">
+                </tr>
+                Shooting
+                <tr>
+                    <div class="stat-badge">
+                        <td>Sat, Apr 19</td>
+                        Goals
+                        <td>Eastside Athletic</td>
+                    </div>
+                    <td>Away</td>
+                    </div>
+                    </div>
+                    <td>4:00pm</td>
+        </div>
+        </tr>
+        <div class="carousel-controls">
+            <button class="carousel-btn prev-player"><i class="fas fa-chevron-left"></i></button>
+            <tr>
+        </div>
+        <td>Sun, May 3</td>
+        <td>Central City FC</td>
+        </div>
+        <td>Home</td>
+        <td>2:00pm</td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    </section>

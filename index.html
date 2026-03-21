@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babato YoungBoys FC - Football Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="BYB Logo" class="logo-img">
+                <span class="club-name">BABATO YOUNGBOYS FC</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#teams" class="nav-link">Teams</a></li>
+                <li><a href="#fixtures" class="nav-link">Fixtures</a></li>
+                <li><a href="#news" class="nav-link">News</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#videos" class="nav-link">Videos</a></li>
+                <li><a href="staff.html" class="nav-link">Staff</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">BABATO YOUNGBOYS FC</h1>
+                <p class="hero-subtitle">Nurturing Future Football Stars</p>
+                <p class="hero-description">Excellence in Every Match | Professional Training | Community Spirit</p>
+                <div class="hero-cta">
+                    <a href="#teams" class="btn btn-primary"><i class="fas fa-users"></i> Meet Our Teams</a>
+                    <a href="#news" class="btn btn-secondary"><i class="fas fa-newspaper"></i> Latest News</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="logo.png" alt="Club Logo" class="logo-large">
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest News</h2>
+                <p class="section-subtitle">Stay updated with club announcements</p>
+            </div>
+
+            <div class="news-carousel">
+                <div class="news-item active">
+                    <div class="news-content">
+                        <h3>U15 Team Wins Regional Championship!</h3>
+                        <p>Congratulations to our U15 team for winning the Regional Youth Championship with a 3-1 victory in the final!</p>
+                        <small>March 20, 2026</small>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-content">
+                        <h3>Girls Team Recruitment Open</h3>
+                        <p>Now accepting registrations for our Girls Team (U13 & U15). Develop your football skills with professional coaching!</p>
+                        <small>March 18, 2026</small>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-content">
+                        <h3>New Training Facility Opening</h3>
+                        <p>Our state-of-the-art training facility is now open! Better equipment, professional coaching, and world-class facilities.</p>
+                        <small>March 15, 2026</small>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-content">
+                        <h3>U10 Development Program Success</h3>
+                        <p>Our U10 foundational program shows remarkable progress in ball control, teamwork, and fundamental skills development.</p>
+                        <small>March 12, 2026</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-controls">
+                <button class="news-btn" id="prevNews"><i class="fas fa-chevron-left"></i></button>
+                <div class="news-dots" id="newsDots"></div>
+                <button class="news-btn" id="nextNews"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fixtures Section -->
+    <section id="fixtures" class="fixtures-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Upcoming Fixtures</h2>
+                <p class="section-subtitle">Mark your calendars for upcoming matches</p>
+            </div>
+
+            <div class="fixtures-grid">
+                <!-- U10 Fixture -->
+                <div class="fixture-card">
+                    <div class="fixture-header u10-header">
+                        <span class="fixture-category">U10</span>
+                        <span class="fixture-date">April 5, 2026</span>
+                    </div>
+                    <div class="fixture-body">
+                        <div class="fixture-teams">
+                            <div class="team-side">
+                                <h3>Babato YoungBoys</h3>
+                                <p class="team-label">Home</p>
+                            </div>
+                            <div class="vs">vs</div>
+                            <div class="team-side">
+                                <h3>Kintampo City</h3>
+                                <p class="team-label">Away</p>
+                            </div>
+                        </div>
+                        <div class="fixture-time">
+                            <i class="fas fa-clock"></i> 3:00 PM
+                        </div>
+                        <div class="fixture-venue">
+                            <i class="fas fa-map-marker-alt"></i> Main Stadium
+                        </div>
+                    </div>
+                </div>
+
+                <!-- U13 Fixture -->
+                <div class="fixture-card">
+                    <div class="fixture-header u13-header">
+                        <span class="fixture-category">U13</span>
+                        <span class="fixture-date">April 6, 2026</span>
+                    </div>
+                    <div class="fixture-body">
+                        <div class="fixture-teams">
+                            <div class="team-side">
+                                <h3>Babato YoungBoys</h3>
+                                <p class="team-label">Home</p>
+                            </div>
+                            <div class="vs">vs</div>
+                            <div class="team-side">
+                                <h3>Northern Youth</h3>
+                                <p class="team-label">Away</p>
+                            </div>
+                        </div>
+                        <div class="fixture-time">
+                            <i class="fas fa-clock"></i> 4:00 PM
+                        </div>
+                        <div class="fixture-venue">
+                            <i class="fas fa-map-marker-alt"></i> Main Stadium
+                        </div>
+                    </div>
+                </div>
+
+                <!-- U15 Fixture -->
+                <div class="fixture-card">
+                    <div class="fixture-header u15-header">
+                        <span class="fixture-category">U15</span>
+                        <span class="fixture-date">April 7, 2026</span>
+                    </div>
+                    <div class="fixture-body">
+                        <div class="fixture-teams">
+                            <div class="team-side">
+                                <h3>Regional Elite</h3>
+                                <p class="team-label">Home</p>
+                            </div>
+                            <div class="vs">vs</div>
+                            <div class="team-side">
+                                <h3>Babato YoungBoys</h3>
+                                <p class="team-label">Away</p>
+                            </div>
+                        </div>
+                        <div class="fixture-time">
+                            <i class="fas fa-clock"></i> 2:00 PM
+                        </div>
+                        <div class="fixture-venue">
+                            <i class="fas fa-map-marker-alt"></i> Central Park
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Girls Fixture -->
+                <div class="fixture-card">
+                    <div class="fixture-header girls-header">
+                        <span class="fixture-category">GIRLS</span>
+                        <span class="fixture-date">April 8, 2026</span>
+                    </div>
+                    <div class="fixture-body">
+                        <div class="fixture-teams">
+                            <div class="team-side">
+                                <h3>Babato YoungBoys</h3>
+                                <p class="team-label">Home</p>
+                            </div>
+                            <div class="vs">vs</div>
+                            <div class="team-side">
+                                <h3>Women's United</h3>
+                                <p class="team-label">Away</p>
+                            </div>
+                        </div>
+                        <div class="fixture-time">
+                            <i class="fas fa-clock"></i> 3:30 PM
+                        </div>
+                        <div class="fixture-venue">
+                            <i class="fas fa-map-marker-alt"></i> Main Stadium
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teams Section -->
+    <section id="teams" class="teams-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Teams</h2>
+                <p class="section-subtitle">Professional development across all age groups</p>
+            </div>
+
+            <div class="teams-grid">
+                <!-- U10 Team -->
+                <div class="team-card">
+                    <div class="team-header u10-header">
+                        <div class="team-badge">U10</div>
+                        <h3>Foundation</h3>
+                    </div>
+                    <img src="UN%20FFTG%20BOYS.jpg" alt="U10 Team" class="team-image">
+                    <div class="team-info">
+                        <p class="team-description">Ages 8-10 | Building fundamental skills</p>
+                        <ul class="team-features">
+                            <li><i class="fas fa-check"></i> Ball Control</li>
+                            <li><i class="fas fa-check"></i> Team Coordination</li>
+                            <li><i class="fas fa-check"></i> Fun Development</li>
+                        </ul>
+                        <a href="u10.html" class="btn btn-small">View Team</a>
+                    </div>
+                </div>
+
+                <!-- U13 Team -->
+                <div class="team-card">
+                    <div class="team-header u13-header">
+                        <div class="team-badge">U13</div>
+                        <h3>Development</h3>
+                    </div>
+                    <img src="UN%20FFTG%20BOYS%202.jpg" alt="U13 Team" class="team-image">
+                    <div class="team-info">
+                        <p class="team-description">Ages 11-13 | Intermediate tactics</p>
+                        <ul class="team-features">
+                            <li><i class="fas fa-check"></i> Advanced Techniques</li>
+                            <li><i class="fas fa-check"></i> Match Strategy</li>
+                            <li><i class="fas fa-check"></i> Competitive Play</li>
+                        </ul>
+                        <a href="u13.html" class="btn btn-small">View Team</a>
+                    </div>
+                </div>
+
+                <!-- U15 Team -->
+                <div class="team-card">
+                    <div class="team-header u15-header">
+                        <div class="team-badge">U15</div>
+                        <h3>Excellence</h3>
+                    </div>
+                    <img src="UN%20FFTG%20BOYS.jpg" alt="U15 Team" class="team-image">
+                    <div class="team-info">
+                        <p class="team-description">Ages 13-15 | Professional-level</p>
+                        <ul class="team-features">
+                            <li><i class="fas fa-check"></i> Elite Coaching</li>
+                            <li><i class="fas fa-check"></i> Regional Tournaments</li>
+                            <li><i class="fas fa-check"></i> Scout Development</li>
+                        </ul>
+                        <a href="u15.html" class="btn btn-small">View Team</a>
+                    </div>
+                </div>
+
+                <!-- Girls Team -->
+                <div class="team-card">
+                    <div class="team-header girls-header">
+                        <div class="team-badge">GIRLS</div>
+                        <h3>Women's Football</h3>
+                    </div>
+                    <img src="UN%20FFTG%20GIRLS.jpg" alt="Girls Team" class="team-image">
+                    <div class="team-info">
+                        <p class="team-description">U13 & U15 | Empowering women</p>
+                        <ul class="team-features">
+                            <li><i class="fas fa-check"></i> Inclusive</li>
+                            <li><i class="fas fa-check"></i> Female Coaching</li>
+                            <li><i class="fas fa-check"></i> Professional</li>
+                        </ul>
+                        <a href="girls.html" class="btn btn-small">View Team</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>Professional Coaching</h3>
+                    <p>Trained and certified coaches with international experience</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-trophy"></i></div>
+                    <h3>Championship Winning</h3>
+                    <p>Multiple regional and national tournament victories</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Community Focus</h3>
+                    <p>Building character and community values in every player</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Player Development</h3>
+                    <p>Pathway to professional football and education</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Staff Section -->
+    <section id="staff" class="staff-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Leadership Team</h2>
+                <p class="section-subtitle">Dedicated professionals behind our success</p>
+            </div>
+            <div class="staff-preview-grid">
+                <div class="staff-card-preview">
+                    <div class="staff-icon"><i class="fas fa-user-tie"></i></div>
+                    <h3>Management</h3>
+                    <p>Professional team administration</p>
+                </div>
+                <div class="staff-card-preview">
+                    <div class="staff-icon"><i class="fas fa-chalkboard-user"></i></div>
+                    <h3>Coaching Staff</h3>
+                    <p>Expert coaches for each age group</p>
+                </div>
+                <div class="staff-card-preview">
+                    <div class="staff-icon"><i class="fas fa-heart-pulse"></i></div>
+                    <h3>Medical Team</h3>
+                    <p>Health and fitness professionals</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="staff.html" class="btn btn-primary">View Full Staff</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have questions? We'd love to hear from you</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Kintampo, Ghana</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+233 XX XXX XXXX</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@babatoyoungboys.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section" style="padding: 5rem 2rem; background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Photo Gallery</h2>
+                <p class="section-subtitle">Moments from our club's memorable matches and events</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; max-width: 1200px; margin: 0 auto;">
+
+                <!-- Gallery Item 1 -->
+                <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease;" onclick="openGalleryModal('UN FFTG BOYS.jpg')">
+                    <img src="UN FFTG BOYS.jpg" alt="Team Match" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                        <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease;" onclick="openGalleryModal('UN FFTG BOYS 2.jpg')">
+                    <img src="UN FFTG BOYS 2.jpg" alt="Team in Action" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                        <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease;" onclick="openGalleryModal('UN FFTG GIRLS.jpg')">
+                    <img src="UN FFTG GIRLS.jpg" alt="Girls Team" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                        <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease;" onclick="openGalleryModal('IMG-20251016-WA0033.jpg')">
+                    <img src="IMG-20251016-WA0033.jpg" alt="Event Photo" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                        <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease;" onclick="openGalleryModal('IMG-20251016-WA0070.jpg')">
+                    <img src="IMG-20251016-WA0070.jpg" alt="Club Activity" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                        <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; transition: all 0.3s ease;" onclick="openGalleryModal('FB_IMG_17635581817292266.jpg')">
+                    <img src="FB_IMG_17635581817292266.jpg" alt="Team Celebration" style="width: 100%; height: 280px; object-fit: cover; transition: transform 0.3s ease;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" class="gallery-overlay">
+                        <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- View More Gallery Button -->
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="gallery.html" class="btn btn-primary" style="display: inline-block; padding: 1rem 2.5rem; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; text-decoration: none; border-radius: 50px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);">
+                    <i class="fas fa-images"></i> View More Gallery
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div id="galleryModal" style="display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.95); align-items: center; justify-content: center;">
+        <button style="position: absolute; top: 30px; right: 40px; font-size: 3rem; color: #f59e0b; cursor: pointer; background: none; border: none; transition: all 0.3s ease;" onclick="closeGalleryModal()">&times;</button>
+        <img id="galleryModalImage" src="" alt="Gallery Image" style="max-width: 90%; max-height: 85%; border-radius: 12px; object-fit: contain; box-shadow: 0 0 50px rgba(245, 158, 11, 0.5);">
+    </div>
+
+    <!-- Video Highlights Section -->
+    <section id="videos" class="video-section" style="padding: 5rem 2rem; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Video Highlights</h2>
+                <p class="section-subtitle">Follow our journey on TikTok <a href="https://www.tiktok.com/@babatoyoungboys_fc" target="_blank" style="color: #f59e0b; text-decoration: none; font-weight: 600;">@babatoyoungboys_fc</a></p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+
+                <!-- Video 1 -->
+                <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(245, 158, 11, 0.2); border-radius: 12px; overflow: hidden; text-align: center; transition: all 0.3s ease;">
+                    <iframe width="100%" height="400" src="https://www.tiktok.com/embed/7616682079983570194" style="border: none; border-radius: 12px;" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <p style="color: #cbd5e1; padding: 1rem; margin: 0; font-size: 0.9rem; font-weight: 600;">Latest Match Highlights</p>
+                </div>
+
+                <!-- Video 2 -->
+                <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(245, 158, 11, 0.2); border-radius: 12px; overflow: hidden; text-align: center; transition: all 0.3s ease;">
+                    <iframe width="100%" height="400" src="https://www.tiktok.com/embed/7604660140201069832" style="border: none; border-radius: 12px;" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <p style="color: #cbd5e1; padding: 1rem; margin: 0; font-size: 0.9rem; font-weight: 600;">Training Session Clips</p>
+                </div>
+
+                <!-- Video 3 -->
+                <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(245, 158, 11, 0.2); border-radius: 12px; overflow: hidden; text-align: center; transition: all 0.3s ease;">
+                    <iframe width="100%" height="400" src="https://www.tiktok.com/embed/7613194171955809543" style="border: none; border-radius: 12px;" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <p style="color: #cbd5e1; padding: 1rem; margin: 0; font-size: 0.9rem; font-weight: 600;">Team Goals & Celebrations</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Babato YoungBoys FC is dedicated to developing young football talent and building champions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#teams">Teams</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="staff.html">Staff</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="affiliations">
+                <h3>Our Affiliations</h3>
+                <div class="affiliations-logos">
+                    <div class="affiliation-logo">
+                        <img src="250px-Ghana_Football_Association_logo.webp" alt="Ghana Football Association">
+                    </div>
+                    <div class="affiliation-logo">
+                        <img src="united-nations-logo-design-1024x559.webp" alt="United Nations">
+                    </div>
+                    <div class="affiliation-logo">
+                        <img src="FFTG.webp" alt="Football for the Goals">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Babato YoungBoys FC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        // Gallery modal functions
+        function openGalleryModal(imageSrc) {
+            const modal = document.getElementById('galleryModal');
+            document.getElementById('galleryModalImage').src = imageSrc;
+            modal.style.display = 'flex';
+        }
+
+        function closeGalleryModal() {
+            const modal = document.getElementById('galleryModal');
+            modal.style.display = 'none';
+        }
+
+        // Close modal when clicking outside the image
+        document.getElementById('galleryModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeGalleryModal();
+            }
+        });
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeGalleryModal();
+            }
+        });
+
+        // Add hover effects to gallery items
+        document.querySelectorAll('[onclick*="openGalleryModal"]').forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                this.querySelector('img').style.transform = 'scale(1.1)';
+                this.querySelector('.gallery-overlay').style.opacity = '1';
+            });
+            item.addEventListener('mouseleave', function() {
+                this.querySelector('img').style.transform = 'scale(1)';
+                this.querySelector('.gallery-overlay').style.opacity = '0';
+            });
+        });
+    </script>
+</body>
+
+</html>

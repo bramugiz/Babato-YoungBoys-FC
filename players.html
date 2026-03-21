@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players - Babato YoungBoys FC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="BYB Logo" class="logo-img">
+                <span class="club-name">BABATO YOUNGBOYS FC</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="players.html" class="nav-link active">Players</a></li>
+                <li><a href="staff.html" class="nav-link">Staff</a></li>
+                <li><a href="index.html#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Our Players</h1>
+            <p>Talented athletes representing Babato YoungBoys FC across all age groups</p>
+        </div>
+    </section>
+
+    <!-- Teams Section -->
+    <section class="teams-section">
+        <div class="container">
+            <div class="team-tabs">
+                <button class="tab-btn active" onclick="switchTeam('u10')">U10 Team</button>
+                <button class="tab-btn" onclick="switchTeam('u13')">U13 Team</button>
+                <button class="tab-btn" onclick="switchTeam('u15')">U15 Team</button>
+                <button class="tab-btn" onclick="switchTeam('girls')">Girls Team</button>
+            </div>
+
+            <div class="players-container">
+                <!-- U10 Team - 14 Cards -->
+                <div id="u10" class="team-content active">
+                    <h2 class="team-title">U10 Team</h2>
+                    <div class="players-grid">
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="isaac.jpg" alt="Topia Isaac">
+                                <div class="player-overlay"><span>Defender</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Topia Isaac</h3>
+                                <p class="player-position">Defender • #9</p>
+                                <div class="player-stats">
+                                    <span>Pace <strong>85</strong></span>
+                                    <span>Defense <strong>88</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="godwin.jpg" alt="Kingsley Godwin">
+                                <div class="player-overlay"><span>Midfielder</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Kingsley Godwin</h3>
+                                <p class="player-position">Midfielder • #8</p>
+                                <div class="player-stats">
+                                    <span>Pace <strong>82</strong></span>
+                                    <span>Passing <strong>85</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="sadat.jpg" alt="Musah Sadat">
+                                <div class="player-overlay"><span>Winger</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Musah Sadat</h3>
+                                <p class="player-position">Winger • #11</p>
+                                <div class="player-stats">
+                                    <span>Pace <strong>92</strong></span>
+                                    <span>Dribbling <strong>87</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="basit.jpg" alt="Issah Abdul Basit">
+                                <div class="player-overlay"><span>Forward</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Issah Abdul Basit</h3>
+                                <p class="player-position">Forward • #3</p>
+                                <div class="player-stats">
+                                    <span>Pace <strong>88</strong></span>
+                                    <span>Shooting <strong>84</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="tawfik.jpg" alt="Issah Abdul Tawfik">
+                                <div class="player-overlay"><span>Midfielder</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Issah Abdul Tawfik</h3>
+                                <p class="player-position">Midfielder • #7</p>
+                                <div class="player-stats">
+                                    <span>Pace <strong>83</strong></span>
+                                    <span>Passing <strong>86</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="nelson.jpg" alt="Bahamepe Nelson">
+                                <div class="player-overlay"><span>Goalkeeper</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Bahamepe Nelson</h3>
+                                <p class="player-position">Goalkeeper • #1</p>
+                                <div class="player-stats">
+                                    <span>Reflexes <strong>87</strong></span>
+                                    <span>Positioning <strong>85</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="jude.jpg" alt="Ahmed Fuseini">
+                                <div class="player-overlay"><span>Forward</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Ahmed Fuseini</h3>
+                                <p class="player-position">Forward • #10</p>
+                                <div class="player-stats">
+                                    <span>Shooting <strong>82</strong></span>
+                                    <span>Pace <strong>87</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="kojo.jpg" alt="Samuel Amoah">
+                                <div class="player-overlay"><span>Midfielder</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Samuel Amoah</h3>
+                                <p class="player-position">Midfielder • #6</p>
+                                <div class="player-stats">
+                                    <span>Passing <strong>84</strong></span>
+                                    <span>Vision <strong>83</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="hakim.jpg" alt="Joseph Kofi">
+                                <div class="player-overlay"><span>Defender</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Joseph Kofi</h3>
+                                <p class="player-position">Defender • #4</p>
+                                <div class="player-stats">
+                                    <span>Defense <strong>86</strong></span>
+                                    <span>Strength <strong>80</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="logo.png" alt="Muhammadu Yakubu">
+                                <div class="player-overlay"><span>Winger</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Muhammadu Yakubu</h3>
+                                <p class="player-position">Winger • #12</p>
+                                <div class="player-stats">
+                                    <span>Pace <strong>90</strong></span>
+                                    <span>Dribbling <strong>82</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="ssadat.jpg" alt="Kwame Asante">
+                                <div class="player-overlay"><span>Defender</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Kwame Asante</h3>
+                                <p class="player-position">Defender • #2</p>
+                                <div class="player-stats">
+                                    <span>Defense <strong>84</strong></span>
+                                    <span>Tackling <strong>85</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="osman.jpg" alt="David Mensah">
+                                <div class="player-overlay"><span>Goalkeeper</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>David Mensah</h3>
+                                <p class="player-position">Goalkeeper • #13</p>
+                                <div class="player-stats">
+                                    <span>Reflexes <strong>83</strong></span>
+                                    <span>Handling <strong>84</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Added 2 new for U10 total 14 -->
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="mukaila.jpg" alt="Emmanuel Boateng">
+                                <div class="player-overlay"><span>Midfielder</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Emmanuel Boateng</h3>
+                                <p class="player-position">Midfielder • #5</p>
+                                <div class="player-stats">
+                                    <span>Passing <strong>81</strong></span>
+                                    <span>Stamina <strong>86</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="sherif.jpg" alt="Kofi Annan">
+                                <div class="player-overlay"><span>Forward</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Kofi Annan</h3>
+                                <p class="player-position">Forward • #14</p>
+                                <div class="player-stats">
+                                    <span>Shooting <strong>80</strong></span>
+                                    <span>Pace <strong>89</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- U13 Team - 14 Cards -->
+                <div id="u13" class="team-content">
+                    <h2 class="team-title">U13 Team</h2>
+                    <div class="players-grid">
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="mukaila.jpg" alt="Abdul Rahman">
+                                <div class="player-overlay"><span>Goalkeeper</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Abdul Rahman</h3>
+                                <p class="player-position">Goalkeeper • #1</p>
+                                <div class="player-stats">
+                                    <span>Reflexes <strong>88</strong></span>
+                                    <span>Handling <strong>86</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="mugiz.jpg" alt="Yaw Darko">
+                                <div class="player-overlay"><span>Defender</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Yaw Darko</h3>
+                                <p class="player-position">Defender • #2</p>
+                                <div class="player-stats">
+                                    <span>Defense <strong>87</strong></span>
+                                    <span>Tackling <strong>85</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="lateef.jpg" alt="Ibrahim Ishaw">
+                                <div class="player-overlay"><span>Winger</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Ibrahim Ishaw</h3>
+                                <p class="player-position">Winger • #9</p>
+                                <div class="player-stats">
+                                    <span>Pace <strong>89</strong></span>
+                                    <span>Dribbling <strong>88</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="sherif.jpg" alt="Kwabena Owusu">
+                                <div class="player-overlay"><span>Midfielder</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Kwabena Owusu</h3>
+                                <p class="player-position">Midfielder • #6</p>
+                                <div class="player-stats">
+                                    <span>Passing <strong>87</strong></span>
+                                    <span>Vision <strong>84</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="akwasi.jpg" alt="Nana Agyeman">
+                                <div class="player-overlay"><span>Forward</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Nana Agyeman</h3>
+                                <p class="player-position">Forward • #10</p>
+                                <div class="player-stats">
+                                    <span>Shooting <strong>86</strong></span>
+                                    <span>Finishing <strong>83</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="baihaky.jpg" alt="Felix Mensah">
+                                <div class="player-overlay"><span>Defender</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Felix Mensah</h3>
+                                <p class="player-position">Defender • #4</p>
+                                <div class="player-stats">
+                                    <span>Defense <strong>89</strong></span>
+                                    <span>Strength <strong>82</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="barikisu.jpg" alt="Prince Boateng">
+                                <div class="player-overlay"><span>Midfielder</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Prince Boateng</h3>
+                                <p class="player-position">Midfielder • #8</p>
+                                <div class="player-stats">
+                                    <span>Stamina <strong>88</strong></span>
+                                    <span>Passing <strong>85</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="barila.jpg" alt="Isaac Tetteh">
+                                <div class="player-overlay"><span>Winger</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Isaac Tetteh</h3>
+                                <p class="player-position">Winger • #11</p>
+                                <div class="player-stats">
+                                    <span>Pace <strong>91</strong></span>
+                                    <span>Crossing <strong>84</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="sadat.jpg" alt="Daniel Adjei">
+                                <div class="player-overlay"><span>Forward</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Daniel Adjei</h3>
+                                <p class="player-position">Forward • #9</p>
+                                <div class="player-stats">
+                                    <span>Shooting <strong>85</strong></span>
+                                    <span>Dribbling <strong>86</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="basit.jpg" alt="Michael Gyamfi">
+                                <div class="player-overlay"><span>Defender</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Michael Gyamfi</h3>
+                                <p class="player-position">Defender • #3</p>
+                                <div class="player-stats">
+                                    <span>Defense <strong>85</strong></span>
+                                    <span>Heading <strong>83</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="godwin.jpg" alt="Ebenezer Ofori">
+                                <div class="player-overlay"><span>Midfielder</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Ebenezer Ofori</h3>
+                                <p class="player-position">Midfielder • #5</p>
+                                <div class="player-stats">
+                                    <span>Passing <strong>89</strong></span>
+                                    <span>Vision <strong>87</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="jude.jpg" alt="Augustine Sowah">
+                                <div class="player-overlay"><span>Winger</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Augustine Sowah</h3>
+                                <p class="player-position">Winger • #7</p>
+                                <div class="player-stats">
+                                    <span>Dribbling <strong>90</strong></span>
+                                    <span>Pace <strong>88</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="kojo.jpg" alt="Richard Baah">
+                                <div class="player-overlay"><span>Defender</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Richard Baah</h3>
+                                <p class="player-position">Defender • #14</p>
+                                <div class="player-stats">
+                                    <span>Tackling <strong>84</strong></span>
+                                    <span>Strength <strong>87</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- U15 Team - 14 Cards -->
+                <div id="u15" class="team-content">
+                    <h2 class="team-title">U15 Team</h2>
+                    <div class="players-grid">
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="hakim.jpg" alt="Jonathan Amoako">
+                                <div class="player-overlay"><span>Goalkeeper</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Jonathan Amoako</h3>
+                                <p class="player-position">Goalkeeper • #1</p>
+                                <div class="player-stats">
+                                    <span>Reflexes <strong>90</strong></span>
+                                    <span>Positioning <strong>89</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="nelson.jpg" alt="William Sackey">
+                                <div class="player-overlay"><span>Defender</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>William Sackey</h3>
+                                <p class="player-position">Defender • #2</p>
+                                <div class="player-stats">
+                                    <span>Defense <strong>91</strong></span>
+                                    <span>Tackling <strong>90</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="tawfik.jpg" alt="Caleb Addo">
+                                <div class="player-overlay"><span>Midfielder</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Caleb Addo</h3>
+                                <p class="player-position">Midfielder • #6</p>
+                                <div class="player-stats">
+                                    <span>Passing <strong>92</strong></span>
+                                    <span>Vision <strong>91</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="sadat.jpg" alt="Enoch Bediako">
+                                <div class="player-overlay"><span>Forward</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Enoch Bediako</h3>
+                                <p class="player-position">Forward • #9</p>
+                                <div class="player-stats">
+                                    <span>Shooting <strong>93</strong></span>
+                                    <span>Finishing <strong>92</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="basit.jpg" alt="Jordan Kyei">
+                                <div class="player-overlay"><span>Winger</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Jordan Kyei</h3>
+                                <p class="player-position">Winger • #11</p>
+                                <div class="player-stats">
+                                    <span>Pace <strong>95</strong></span>
+                                    <span>Dribbling <strong>94</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="osman.jpg" alt="Theodore Acquah">
+                                <div class="player-overlay"><span>Defender</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Theodore Acquah</h3>
+                                <p class="player-position">Defender • #3</p>
+                                <div class="player-stats">
+                                    <span>Defense <strong>92</strong></span>
+                                    <span>Heading <strong>90</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="ssadat.jpg" alt="Malik Fosu">
+                                <div class="player-overlay"><span>Midfielder</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Malik Fosu</h3>
+                                <p class="player-position">Midfielder • #8</p>
+                                <div class="player-stats">
+                                    <span>Stamina <strong>93</strong></span>
+                                    <span>Passing <strong>90</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="logo.png" alt="Kwame Paintsil">
+                                <div class="player-overlay"><span>Forward</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Kwame Paintsil</h3>
+                                <p class="player-position">Forward • #10</p>
+                                <div class="player-stats">
+                                    <span>Shooting <strong>91</strong></span>
+                                    <span>Pace <strong>92</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="jude.jpg" alt="Bismark Ampofo">
+                                <div class="player-overlay"><span>Winger</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Bismark Ampofo</h3>
+                                <p class="player-position">Winger • #7</p>
+                                <div class="player-stats">
+                                    <span>Dribbling <strong>93</strong></span>
+                                    <span>Crossing <strong>89</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="kojo.jpg" alt="Sean Appiah">
+                                <div class="player-overlay"><span>Defender</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Sean Appiah</h3>
+                                <p class="player-position">Defender • #5</p>
+                                <div class="player-stats">
+                                    <span>Tackling <strong>92</strong></span>
+                                    <span>Strength <strong>91</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="hakim.jpg" alt="Rashid Nurudeen">
+                                <div class="player-overlay"><span>Midfielder</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Rashid Nurudeen</h3>
+                                <p class="player-position">Midfielder • #4</p>
+                                <div class="player-stats">
+                                    <span>Passing <strong>91</strong></span>
+                                    <span>Long Shots <strong>88</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="godwin.jpg" alt="Henry Asante">
+                                <div class="player-overlay"><span>Forward</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Henry Asante</h3>
+                                <p class="player-position">Forward • #12</p>
+                                <div class="player-stats">
+                                    <span>Finishing <strong>90</strong></span>
+                                    <span>Off Ball <strong>89</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="sherif.jpg" alt="Noah Salifu">
+                                <div class="player-overlay"><span>Goalkeeper</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Noah Salifu</h3>
+                                <p class="player-position">Goalkeeper • #14</p>
+                                <div class="player-stats">
+                                    <span>Handling <strong>89</strong></span>
+                                    <span>Distribution <strong>87</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Girls Team - 14 Cards -->
+                <div id="girls" class="team-content">
+                    <h2 class="team-title">Girls Team</h2>
+                    <div class="players-grid">
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="priscilla.jpg" alt="Priscilla Mensah">
+                                <div class="player-overlay"><span>Defender</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Priscilla Mensah</h3>
+                                <p class="player-position">Defender • #5</p>
+                                <div class="player-stats">
+                                    <span>Defense <strong>87</strong></span>
+                                    <span>Heading <strong>84</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="abiba.jpg" alt="Abiba Konadu">
+                                <div class="player-overlay"><span>Midfielder</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Abiba Konadu</h3>
+                                <p class="player-position">Midfielder • #8</p>
+                                <div class="player-stats">
+                                    <span>Passing <strong>88</strong></span>
+                                    <span>Vision <strong>86</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="amina.jpg" alt="Amina Siddiq">
+                                <div class="player-overlay"><span>Forward</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Amina Siddiq</h3>
+                                <p class="player-position">Forward • #9</p>
+                                <div class="player-stats">
+                                    <span>Shooting <strong>89</strong></span>
+                                    <span>Pace <strong>87</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="elizabeth.jpg" alt="Elizabeth Boateng">
+                                <div class="player-overlay"><span>Winger</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Elizabeth Boateng</h3>
+                                <p class="player-position">Winger • #11</p>
+                                <div class="player-stats">
+                                    <span>Dribbling <strong>90</strong></span>
+                                    <span>Pace <strong>91</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="esther.jpg" alt="Esther Addo">
+                                <div class="player-overlay"><span>Goalkeeper</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Esther Addo</h3>
+                                <p class="player-position">Goalkeeper • #1</p>
+                                <div class="player-stats">
+                                    <span>Reflexes <strong>88</strong></span>
+                                    <span>Positioning <strong>85</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="fahima.jpg" alt="Fahima Yakubu">
+                                <div class="player-overlay"><span>Defender</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Fahima Yakubu</h3>
+                                <p class="player-position">Defender • #2</p>
+                                <div class="player-stats">
+                                    <span>Defense <strong>86</strong></span>
+                                    <span>Tackling <strong>84</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="fati.jpg" alt="Fatima Issah">
+                                <div class="player-overlay"><span>Midfielder</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Fatima Issah</h3>
+                                <p class="player-position">Midfielder • #6</p>
+                                <div class="player-stats">
+                                    <span>Passing <strong>87</strong></span>
+                                    <span>Stamina <strong>89</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="gifty.jpg" alt="Gifty Amoah">
+                                <div class="player-overlay"><span>Forward</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Gifty Amoah</h3>
+                                <p class="player-position">Forward • #10</p>
+                                <div class="player-stats">
+                                    <span>Shooting <strong>85</strong></span>
+                                    <span>Finishing <strong>88</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="hikima.jpg" alt="Hikima Salifu">
+                                <div class="player-overlay"><span>Winger</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Hikima Salifu</h3>
+                                <p class="player-position">Winger • #7</p>
+                                <div class="player-stats">
+                                    <span>Pace <strong>92</strong></span>
+                                    <span>Crossing <strong>83</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="lariya.jpg" alt="Lariya Mohammed">
+                                <div class="player-overlay"><span>Defender</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Lariya Mohammed</h3>
+                                <p class="player-position">Defender • #4</p>
+                                <div class="player-stats">
+                                    <span>Defense <strong>89</strong></span>
+                                    <span>Strength <strong>85</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="priscilla.jpg" alt="Grace Darko">
+                                <div class="player-overlay"><span>Midfielder</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Grace Darko</h3>
+                                <p class="player-position">Midfielder • #3</p>
+                                <div class="player-stats">
+                                    <span>Passing <strong>86</strong></span>
+                                    <span>Vision <strong>84</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="abiba.jpg" alt="Zainab Ibrahim">
+                                <div class="player-overlay"><span>Forward</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Zainab Ibrahim</h3>
+                                <p class="player-position">Forward • #12</p>
+                                <div class="player-stats">
+                                    <span>Shooting <strong>84</strong></span>
+                                    <span>Dribbling <strong>87</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="amina.jpg" alt="Safiya Abdul">
+                                <div class="player-overlay"><span>Goalkeeper</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Safiya Abdul</h3>
+                                <p class="player-position">Goalkeeper • #14</p>
+                                <div class="player-stats">
+                                    <span>Reflexes <strong>86</strong></span>
+                                    <span>Handling <strong>87</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-image">
+                                <img src="elizabeth.jpg" alt="Nana Yaa">
+                                <div class="player-overlay"><span>Midfielder</span></div>
+                            </div>
+                            <div class="player-info">
+                                <h3>Nana Yaa</h3>
+                                <p class="player-position">Midfielder • #13</p>
+                                <div class="player-stats">
+                                    <span>Stamina <strong>90</strong></span>
+                                    <span>Passing <strong>85</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Logos -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Babato YoungBoys FC is dedicated to nurturing young football talent through quality training and competitive matches.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="players.html">Players</a></li>
+                        <li><a href="staff.html">Staff</a></li>
+                        <li><a href="index.html#gallery">Gallery</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="affiliations">
+                    <h5>Affiliated With:</h5>
+                    <img src="250px-Ghana_Football_Association_logo.webp" alt="Ghana Football Association" title="GFA">
+                    <img src="united-nations-logo-design-1024x559.webp" alt="United Nations" title="UN">
+                    <img src="FFTG.webp" alt="Football for the Goals" title="FFTG">
+                    <img src="https://www.fifa.com/themes/custom/fifa/assets/img/fifa-logo.png" alt="FIFA" title="FIFA">
+                </div>
+                <p>&copy; 2026 Babato YoungBoys FC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <button id="scrollTop" class="scroll-top"><i class="fas fa-arrow-up"></i></button>
+
+</body>
+
+
+</html>
+
+</html>
+
+</html>

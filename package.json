@@ -1,0 +1,14 @@
+{
+    "name": "babato-youngboys-fc-website",
+    "version": "1.0.0",
+    "description": "Babato YoungBoys FC - Community Football Club Website",
+    "main": "index.html",
+    "type": "module",
+    "scripts": {
+        "build": "echo 'Static site - no build needed'",
+        "start": "echo 'This is a static website'"
+    },
+    "keywords": ["football", "sports", "club", "ghana", "kintampo"],
+    "author": "Babato YoungBoys FC",
+    "license": "MIT"
+}

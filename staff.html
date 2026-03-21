@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff - Babato YoungBoys FC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="teams.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .image-modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        .image-modal.active {
+            display: flex;
+        }
+        
+        .modal-image {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 12px;
+            object-fit: contain;
+            box-shadow: 0 0 50px rgba(245, 158, 11, 0.5);
+        }
+        
+        .modal-name {
+            color: #f59e0b;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            font-weight: 600;
+        }
+        
+        .modal-close-btn {
+            position: absolute;
+            top: 30px;
+            right: 40px;
+            font-size: 3rem;
+            color: #f59e0b;
+            cursor: pointer;
+            background: none;
+            border: none;
+            transition: all 0.3s ease;
+        }
+        
+        .modal-close-btn:hover {
+            transform: scale(1.2);
+        }
+    </style>
+
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="logo.png" alt="BYB Logo" class="logo-img">
+                    <span class="club-name">BABATO YOUNGBOYS FC</span>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#teams" class="nav-link">Teams</a></li>
+                    <li><a href="index.html#fixtures" class="nav-link">Fixtures</a></li>
+                    <li><a href="index.html#news" class="nav-link">News</a></li>
+                    <li><a href="index.html#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="index.html#videos" class="nav-link">Videos</a></li>
+                    <li><a href="staff.html" class="nav-link active">Staff</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Staff Header -->
+        <section style="margin-top: 70px; padding: 4rem 2rem; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); text-align: center; color: white;">
+            <h1 style="font-size: 2.5rem; margin-bottom: 1rem; font-family: 'Oswald', sans-serif;">Our Coaching Staff</h1>
+            <p style="font-size: 1.1rem; opacity: 0.9;">Professional team dedicated to player development</p>
+        </section>
+
+        <!-- Staff Grid -->
+        <section style="padding: 5rem 2rem; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);">
+            <div class="container">
+                <div class="team-grid">
+
+                    <!-- Staff Member 1 -->
+                    <div class="player-profile" onclick="openImageModal('isaac.jpg', 'Ussif Hassan')" style="cursor: pointer;">
+                        <img src="hassan.jpg" alt="Ussif Hassan">
+                        <h3>Ussif Hassan</h3>
+                        <p class="position">General Director</p>
+                    </div>
+
+                    <!-- Staff Member 2 -->
+                    <div class="player-profile" onclick="openImageModal('mukaila.jpg', 'Adam Mukaila')" style="cursor: pointer;">
+                        <img src="mukaila.jpg" alt="Adam Mukaila">
+                        <h3>Adam Mukaila</h3>
+                        <p class="position">Head Coach</p>
+                    </div>
+
+                    <!-- Staff Member 3 -->
+                    <div class="player-profile" onclick="openImageModal('neymar.jpg', 'Sulemana Mohammed')" style="cursor: pointer;">
+                        <img src="neymar.jpg" alt="Sulemana Mohammed">
+                        <h3>Sulemana Mohammed</h3>
+                        <p class="position">Assistt Coach</p>
+                    </div>
+
+                    <!-- Staff Member 4 -->
+                    <div class="player-profile" onclick="openImageModal('lateef.jpg', 'Kande Lateef')" style="cursor: pointer;">
+                        <img src="lateef.jpg" alt="Kande Lateef">
+                        <h3>Kande Lateef</h3>
+                        <p class="position">Club Photographer</p>
+                    </div>
+
+                    <!-- Staff Member 5 -->
+                    <div class="player-profile" onclick="openImageModal('mugiz.jpg', 'Mugiss Abdul Mahama')" style="cursor: pointer;">
+                        <img src="mugiz.jpg" alt="Mugiss Abdul Mahama">
+                        <h3>Mugiss Abdul Mahama</h3>
+                        <p class="position">I.T Manager & Club Secretary</p>
+                    </div>
+
+                    <!-- Staff Member 6 -->
+                    <div class="player-profile" onclick="openImageModal('priscilla.jpg', 'Ambrose Sakyery')" style="cursor: pointer;">
+                        <img src="logo.png" alt="Ambrose Sakyery">
+                        <h3>Ambrose Sakyery</h3>
+                        <p class="position">Club Psychologist</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Highlights Section -->
+        <section style="padding: 5rem 2rem; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 3rem;">
+                    <h2 style="font-size: 2.5rem; color: white; font-family: 'Oswald', sans-serif; margin-bottom: 0.5rem;">Video Highlights</h2>
+                    <p style="font-size: 1.1rem; color: #cbd5e1;">Follow our journey on TikTok <a href="https://www.tiktok.com/@babatoyoungboys_fc" target="_blank" style="color: #f59e0b; text-decoration: none; font-weight: 600;">@babatoyoungboys_fc</a></p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+
+                    <!-- Video 1 -->
+                    <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(245, 158, 11, 0.2); border-radius: 12px; overflow: hidden; text-align: center;">
+                        <iframe width="100%" height="400" src="https://www.tiktok.com/embed/7616682079983570194" style="border: none; border-radius: 12px;" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <p style="color: #cbd5e1; padding: 1rem; margin: 0; font-size: 0.9rem;">Latest Match Highlights</p>
+                    </div>
+
+                    <!-- Video 2 -->
+                    <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(245, 158, 11, 0.2); border-radius: 12px; overflow: hidden; text-align: center;">
+                        <iframe width="100%" height="400" src="https://www.tiktok.com/embed/7604660140201069832" style="border: none; border-radius: 12px;" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <p style="color: #cbd5e1; padding: 1rem; margin: 0; font-size: 0.9rem;">Training Session Clips</p>
+                    </div>
+
+                    <!-- Video 3 -->
+                    <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(245, 158, 11, 0.2); border-radius: 12px; overflow: hidden; text-align: center;">
+                        <iframe width="100%" height="400" src="https://www.tiktok.com/embed/7613194171955809543" style="border: none; border-radius: 12px;" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <p style="color: #cbd5e1; padding: 1rem; margin: 0; font-size: 0.9rem;">Team Goals & Celebrations</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Back to Home -->
+        <section style="padding: 3rem 2rem; text-align: center; background: linear-gradient(135deg, #1e40af 0%, #0f172a 100%);">
+            <a href="index.html" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.9rem 2rem; background: linear-gradient(135deg, #f59e0b, #d97706); color: #000; text-decoration: none; border-radius: 12px; font-weight: 600;">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+        </section>
+
+        <!-- Image Modal -->
+        <div id="imageModal" class="image-modal">
+            <button class="modal-close-btn" onclick="closeImageModal()">&times;</button>
+            <img id="modalImageContent" class="modal-image" src="" alt="Staff Member">
+            <div class="modal-name" id="modalNameContent"></div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2026 Babato YoungBoys FC. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script>
+            function openImageModal(imageSrc, name) {
+                const modal = document.getElementById('imageModal');
+                document.getElementById('modalImageContent').src = imageSrc;
+                document.getElementById('modalNameContent').textContent = name;
+                modal.classList.add('active');
+            }
+
+            function closeImageModal() {
+                const modal = document.getElementById('imageModal');
+                modal.classList.remove('active');
+            }
+
+            // Close modal when clicking outside the image
+            document.getElementById('imageModal').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeImageModal();
+                }
+            });
+
+            // Close modal on Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closeImageModal();
+                }
+            });
+        </script>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>

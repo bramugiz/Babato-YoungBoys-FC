@@ -1,0 +1,145 @@
+/* GSAP Animation Utilities - Babato YoungBoys FC - Step 2 */
+
+
+/* Base animation classes for GSAP */
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.scale-in {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.stagger-item {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+
+/* Hero specific */
+
+.hero-title {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.hero-subtitle {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.hero-cta .btn:nth-child(1) {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.hero-cta .btn:nth-child(2) {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+
+/* Card stagger */
+
+.player-card,
+.staff-card {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+
+/* Hover animations */
+
+.card-hover {
+    transition: var(--transition);
+}
+
+.card-hover:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: var(--shadow-lg) !important;
+}
+
+
+/* Navbar slide in */
+
+.nav-menu li:nth-child(1) {
+    opacity: 0;
+    transform: translateX(30px);
+}
+
+.nav-menu li:nth-child(2) {
+    opacity: 0;
+    transform: translateX(30px);
+}
+
+.nav-menu li:nth-child(3) {
+    opacity: 0;
+    transform: translateX(30px);
+}
+
+.nav-menu li:nth-child(4) {
+    opacity: 0;
+    transform: translateX(30px);
+}
+
+.nav-menu li:nth-child(5) {
+    opacity: 0;
+    transform: translateX(30px);
+}
+
+.nav-menu li:nth-child(6) {
+    opacity: 0;
+    transform: translateX(30px);
+}
+
+
+/* Section reveal */
+
+.section-title {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.section-subtitle {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+
+/* Tab active */
+
+.tab-btn.active {
+    animation: goldPulse 0.6s ease;
+}
+
+@keyframes goldPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(244, 196, 48, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(244, 196, 48, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(244, 196, 48, 0);
+    }
+}
+
+
+/* Smooth scroll targets */
+
+section {
+    scroll-margin-top: 100px;
+}
+
+
+/* Responsive animations */
+
+@media (max-width: 768px) {
+    .nav-menu li {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+}
