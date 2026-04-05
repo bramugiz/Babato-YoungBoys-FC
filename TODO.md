@@ -1,20 +1,12 @@
-# ComoFootball Style Redesign Tracker
+# Team Player Integration TODO
 
-## Completed
-✅ styles.css cleanup
-✅ animations.css + links
-✅ script.js external
+## Steps from Approved Plan
+- [x] 1. Create New Club Website/u17.html with 20 players (5 provided + 15 Player)
+- [x] 2. Update girls.html team-grid to 20 players (13 provided + 7 Player)
+- [x] 3. Update u10.html team-grid to 20 players (6 provided + 14 Player)
+- [x] 4. Update u13.html team-grid to 20 players (18 provided + 2 Player)
+- [x] 5. Update u15.html team-grid to 20 players (17 provided + 3 Player)
+- [x] 6. Verify and complete
 
-## In Progress
-🔄 1. Update styles.css for Como style (dark bg, gold accents, masonry grids, carousel, hover scales)
-
-## Remaining
-- 2. index.html: Hero carousel landscape/team photos, featured players slider U10/U13/U15/Girls
-- 3. players.html: Masonry grids per team (assign 6-7 jpgs/team), filter tabs, modal stats
-- 4. staff.html: Management cards expand to 8-10, hover effects
-- 5. Add news/fixtures slider from fixtures.json
-- 6. Sponsors carousel (GFA/UN/FFTG/FIFA logos)
-- 7. Test responsive + deploy Vercel (`npx vercel`)
-
-**Current Step**: 1. Como styles.css
+Awaiting user approval to start step 1.
 
