@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build & Deployment
+.vercel/
+dist/
+build/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Temporary files
+*.tmp
+*.log
+npm-debug.log*
+
+# Project specific
+[BypassFRPFiles.com]*
+original_index_backup.txt
+TODO*.md
+
+# System installer files
+Universal Advance Unlocker_Installer.rar
+Unlockool-2026-03-17-0.zip

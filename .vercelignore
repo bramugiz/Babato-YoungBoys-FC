@@ -1,0 +1,38 @@
+# OS files
+Thumbs.db
+.DS_Store
+*.lnk
+
+# System files that shouldn't be deployed
+Universal Advance Unlocker_Installer.rar
+Unlockool-2026-03-17-0.zip
+
+# IDE and development files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Documentation and notes
+TODO.md
+TODO_new.md
+original_index_backup.txt
+README.md
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Build artifacts
+.vercel/
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Node modules (if any)
+node_modules/
